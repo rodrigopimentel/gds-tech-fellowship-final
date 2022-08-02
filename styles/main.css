@@ -69,7 +69,7 @@ hero-text p {
     box-shadow: none;
 }
 
-section h2 {
+section > h2 {
     display: block;
     font-size: 1.3rem;
     margin: 1rem 0.66rem;
@@ -288,6 +288,41 @@ footer-container {
     justify-self: right;
 }
 
+#latest-rides {
+    display: block;
+    background-color: #FFFF1F;
+    background-image: url('../img/Charlie_Tanfield_Lincoln_2021.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    padding: 0.66rem;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+#latest-rides > h2 {
+    margin: 1rem 0.66rem;
+}
+
+#latest-rides > img {
+    margin: 0 0 0 0.66rem;
+}
+
+#latest-rides > a {
+    display: block;
+    text-decoration: none;
+    color: #707070;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem 0.66rem;
+}
+
+#latest-rides > a:hover {
+    color: #141414;
+}
+
+
 @media only screen and (min-width: 480px) {
     product-image img {
         height: 15em;
@@ -296,6 +331,11 @@ footer-container {
     product-category-item img {
         height: 10rem;
     }
+
+    #latest-rides > img {
+        height: 12rem;
+    }
+    
 }
 
 @media only screen and (min-width: 560px) {
@@ -315,6 +355,10 @@ footer-container {
     blog-post-image img {
         height: 18rem;
     }
+
+    #latest-rides > img {
+        height: 15rem;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -333,6 +377,10 @@ footer-container {
 
     blog-post-image img {
         height: 25rem;
+    }
+
+    #latest-rides > img {
+        height: 20rem;
     }
 }
 
@@ -413,5 +461,13 @@ footer-container {
 
     #mobile-nav {
         display: none;
+    }
+
+    #mobile-nav ul {
+        display: none;
+    }
+
+    #latest-rides > img {
+        height: 25rem;
     }
 }
