@@ -9,6 +9,7 @@ header {
     display: flex;
     background-color: #FFFF1F;
     height: 4rem;
+    justify-content: space-between;
 }
 
 header img {
@@ -39,6 +40,7 @@ hero-text {
     color: #F5F5F5;
     font-size: 1.8rem;
     font-weight: 500;
+    text-shadow: 2px 2px #1414145d;
 }
 
 hero-text p {
@@ -67,7 +69,7 @@ hero-text p {
     box-shadow: none;
 }
 
-section h2 {
+section > h2 {
     display: block;
     font-size: 1.3rem;
     margin: 1rem 0.66rem;
@@ -184,6 +186,10 @@ blog-posts h2 {
     margin: 0 0 1rem 0;
 }
 
+blog-post-item {
+    margin: 0 1rem;
+}
+
 blog-post-item a {
     text-decoration: none;
     color: #707070;
@@ -192,10 +198,13 @@ blog-post-item a {
     font-weight: 500;
 }
 
+blog-post-item img {
+    margin: 0 auto;
+}
+
 footer {
-    margin: 4rem 0 0 0;
-    padding: 3rem 0.66rem;
-    display: block;
+    margin: 5rem 0 0 0;
+    padding: 4rem 0.66rem;
     background-color: #FFFF1F
 }
 
@@ -212,4 +221,253 @@ footer nav a:hover {
 
 footer nav li {
     padding: 0.66rem 0;
+}
+
+contact-info {
+    text-align: left;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.description {
+    margin: 0 0 1rem 0;
+}
+
+footer-container {
+    display: grid;
+    gap: 1rem;
+    grid-template: 1fr / 1fr 1fr;
+    justify-content: space-around;
+    margin: 0.66rem 0.66rem;
+}
+
+#desktop-nav {
+    display: none;
+}
+
+.nav-button {
+    cursor: pointer;
+    user-select: none;
+    font-size: 2rem;
+    margin: 1rem 0.66rem 0 0;
+}
+
+#mobile-nav {
+    display: none;
+    background-color: #141414;
+    color: #F5F5F5;
+}
+
+#mobile-nav ul {
+    margin: 0 auto;
+}
+
+
+#mobile-nav li {
+    text-align: center;
+}
+
+#mobile-nav a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+
+#mobile-nav li:hover {
+    background-color: #707070;
+}
+
+#nav-button {
+    display: block;
+    justify-self: right;
+}
+
+#latest-rides {
+    display: block;
+    background-color: #FFFF1F;
+    background-image: url('../img/Charlie_Tanfield_Lincoln_2021.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    padding: 0.66rem;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+#latest-rides > h2 {
+    margin: 1rem 0.66rem;
+}
+
+#latest-rides > img {
+    margin: 0 0 0 0.66rem;
+}
+
+#latest-rides > a {
+    display: block;
+    text-decoration: none;
+    color: #707070;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem 0.66rem;
+}
+
+#latest-rides > a:hover {
+    color: #141414;
+}
+
+
+@media only screen and (min-width: 480px) {
+    product-image img {
+        height: 15em;
+    }
+
+    product-category-item img {
+        height: 10rem;
+    }
+
+    #latest-rides > img {
+        height: 12rem;
+    }
+    
+}
+
+@media only screen and (min-width: 560px) {
+    
+    #hero {
+        height: 25rem;
+    }
+    
+    product-image img {
+        height: 18em;
+    }
+
+    product-category-item img {
+        height: 12rem;
+    }
+
+    blog-post-image img {
+        height: 18rem;
+    }
+
+    #latest-rides > img {
+        height: 15rem;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    
+    #hero {
+        height: 30rem;
+    }
+    
+    product-image img {
+        height: 25em;
+    }
+
+    product-category-item img {
+        height: 15rem;
+    }
+
+    blog-post-image img {
+        height: 25rem;
+    }
+
+    #latest-rides > img {
+        height: 20rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    header img {
+        margin: auto;
+        max-width: 20rem;
+        flex-basis: 100%;
+    }
+    
+    main {
+        margin: 0 auto;
+        width: 1024px;
+    }
+
+    #hero {
+        height: 35rem;
+        width: 1024px;
+        margin: 1rem auto;
+    }
+    
+    product-image img {
+        height: 25em;
+    }
+
+    product-category-item img {
+        height: 20rem;
+    }
+
+    blog-post-image img {
+        height: 25rem;
+    }
+
+    footer-container {
+        margin: 0.66rem auto;
+        width: 1024px;
+    }
+
+    #desktop-nav {
+        display: block;
+        flex-basis: 100%;
+    }
+
+    header {
+        display: flex;
+        background-color: #FFFF1F;
+        height: 4rem;
+        flex-wrap: wrap;
+    }
+
+    header nav {
+        margin: 0 auto;
+        background-color: #FFFF1F;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    header nav li {
+        display: inline;
+    }
+
+    header nav a {
+        color: #141414;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding: 1rem 1rem;
+    }
+
+    header nav a:hover {
+        font-weight: 500;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
+
+    #mobile-nav ul {
+        display: none;
+    }
+
+    #latest-rides > img {
+        height: 25rem;
+    }
 }

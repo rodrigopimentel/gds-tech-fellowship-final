@@ -6,94 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/nav.js"></script>
     <title>Mike's Bike Shop</title>
 </head>
 <body>
     <header>
         <img src="./img/logo.svg" alt="Mike's Bike Shop">
-    </header>
-    <section id="hero">
-            <hero-text><p>Copanhagen Wheel now available!</p></hero-text>
-        <a class="order-button" href="#">Order now</a>
-    </section>
-    <section id="featured-products">
-        <h2>Featured Products</h2>
-        <featured-products>
-            <featured-product-item>
-                <product-image>
-                    <img src="./img/featured-product.svg" alt="product-1">
-                </product-image>
-                <p class="brand-text">Brand</p>
-                <p class="product-text">Product Name</p>
-                <p class="product-price">$100.00</p>
-            </featured-product-item>
-            <featured-product-item>
-                <product-image>
-                    <img src="./img/featured-product.svg" alt="product-2">
-                </product-image>
-                <p class="brand-text">Brand</p>
-                <p class="product-text">Product Name</p>
-                <p class="product-price">$100.00</p>
-            </featured-product-item>
-        </featured-products>
-    </section>
-    <section id="product-categories">
-        <h2>Product Categories</h2>
-        <product-categories>
-            <product-category-item>
-                <category-image>
-                    <img src="./img/category-image.svg" alt="category-1">
-                </category-image>
-                <p class="category-text">Category</p>
-                <a href="#">Shop Now →</a>
-            </product-category-item>
-            <product-category-item>
-                <category-image>
-                    <img src="./img/category-image.svg" alt="category-2">
-                </category-image>
-                <p class="category-text">Category</p>
-                <a href="#">Shop Now →</a>
-            </product-category-item>
-            <product-category-item>
-                <category-image>
-                    <img src="./img/category-image.svg" alt="category-3">
-                </category-image>
-                <p class="category-text">Category</p>
-                <a href="#">Shop Now →</a>
-            </product-category-item>
-        </product-categories>
-    </section>
-    <section id="latest-rides">
-        <h2>Latest Rides</h2>
-    </section>
-    <section id="blog-posts">
-        <h2>Latest Blog Posts</h2>
-        <blog-posts>
-            <blog-post-item>
-                <blog-post-image>
-                    <img src="./img/blog-post.svg" alt="post-1">
-                </blog-post-image>
-                <h2>Post Header</h2>
-                <p class="post-date">26 July 2022</p>
-                <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur maximus libero...</p>
-                <a href="#">READ MORE →</a>
-            </blog-post-item>
-            <blog-post-item>
-                <blog-post-image>
-                    <img src="./img/blog-post.svg" alt="post-1">
-                </blog-post-image>
-                <h2>Post Header</h2>
-                <p class="post-date">26 July 2022</p>
-                <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur maximus libero...</p>
-                <a href="#">READ MORE →</a>
-            </blog-post-item>
-        </blog-posts>
-    </section>
-    <footer>
-        <nav>
+        <p class="nav-button" onclick="showNav()">☰</p>
+        <nav id="desktop-nav">
             <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Shop</a></li>
@@ -101,11 +24,112 @@
                 <li><a href="#">Share Your Ride</a></li>
             </ul>
         </nav>
-        <contact-info>
-            <p>Mike's Bike Shop is your full service dolor sit amet, consectetur located in City, State.</p>
-            <p>Phone: <span class="bold">(000) 000-0000</span></p>
-            <p>Email: <span class="bold">mail@mikesbikeshop.com</span></p>
-        </contact-info>
+    </header>
+        <nav id="mobile-nav">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Share Your Ride</a></li>
+            </ul>
+        </nav>
+    <section id="hero">
+            <hero-text><p>Copanhagen Wheel now available!</p></hero-text>
+        <a class="order-button" href="#">Order now</a>
+    </section>
+    <main>
+        <section id="featured-products">
+            <h2>Featured Products</h2>
+            <featured-products>
+                <featured-product-item>
+                    <product-image>
+                        <img src="./img/featured-product.svg" alt="product-1">
+                    </product-image>
+                    <p class="brand-text">Brand</p>
+                    <p class="product-text">Product Name</p>
+                    <p class="product-price">$100.00</p>
+                </featured-product-item>
+                <featured-product-item>
+                    <product-image>
+                        <img src="./img/featured-product.svg" alt="product-2">
+                    </product-image>
+                    <p class="brand-text">Brand</p>
+                    <p class="product-text">Product Name</p>
+                    <p class="product-price">$100.00</p>
+                </featured-product-item>
+            </featured-products>
+        </section>
+        <section id="product-categories">
+            <h2>Product Categories</h2>
+            <product-categories>
+                <product-category-item>
+                    <category-image>
+                        <img src="./img/category-image.svg" alt="category-1">
+                    </category-image>
+                    <p class="category-text">Category</p>
+                    <a href="#">Shop Now →</a>
+                </product-category-item>
+                <product-category-item>
+                    <category-image>
+                        <img src="./img/category-image.svg" alt="category-2">
+                    </category-image>
+                    <p class="category-text">Category</p>
+                    <a href="#">Shop Now →</a>
+                </product-category-item>
+                <product-category-item>
+                    <category-image>
+                        <img src="./img/category-image.svg" alt="category-3">
+                    </category-image>
+                    <p class="category-text">Category</p>
+                    <a href="#">Shop Now →</a>
+                </product-category-item>
+            </product-categories>
+        </section>
+        <section id="latest-rides">
+            <h2>Latest Rides</h2>
+            <img src="img/placeholder.svg" alt="">
+            <a href="#">VIEW & SHARE RIDES →</a>
+        </section>
+        <section id="blog-posts">
+            <h2>Latest Blog Posts</h2>
+            <blog-posts>
+                <blog-post-item>
+                    <blog-post-image>
+                        <img src="./img/blog-post.svg" alt="post-1">
+                    </blog-post-image>
+                    <h2>Post Header</h2>
+                    <p class="post-date">26 July 2022</p>
+                    <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur maximus libero...</p>
+                    <a href="#">READ MORE →</a>
+                </blog-post-item>
+                <blog-post-item>
+                    <blog-post-image>
+                        <img src="./img/blog-post.svg" alt="post-1">
+                    </blog-post-image>
+                    <h2>Post Header</h2>
+                    <p class="post-date">26 July 2022</p>
+                    <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur maximus libero...</p>
+                    <a href="#">READ MORE →</a>
+                </blog-post-item>
+            </blog-posts>
+        </section>
+    </main>
+    <footer>
+        <footer-container>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Share Your Ride</a></li>
+                </ul>
+            </nav>
+            <contact-info>
+                <p class="description">Mike's Bike Shop is your full service dolor sit amet, consectetur located in City, State.</p>
+                <p>Phone: <span class="bold">(000) 000-0000</span></p>
+                <p>Email: <span class="bold">mail@mikesbikeshop.com</span></p>
+            </contact-info>
+        </footer-container>
     </footer>
 </body>
 </html>
