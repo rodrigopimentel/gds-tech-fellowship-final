@@ -193,9 +193,8 @@ blog-post-item a {
 }
 
 footer {
-    margin: 4rem 0 0 0;
-    padding: 3rem 0.66rem;
-    display: block;
+    margin: 5rem 0 0 0;
+    padding: 4rem 0.66rem;
     background-color: #FFFF1F
 }
 
@@ -212,4 +211,94 @@ footer nav a:hover {
 
 footer nav li {
     padding: 0.66rem 0;
+}
+
+contact-info {
+    text-align: left;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.description {
+    margin: 0 0 1rem 0;
+}
+
+footer-container {
+    display: grid;
+    gap: 1rem;
+    grid-template: 1fr / 1fr 1fr;
+    justify-content: space-around;
+    margin: 0.66rem 0.66rem;
+}
+
+@media only screen and (min-width: 480px) {
+    product-image img {
+        height: 15em;
+    }
+
+    product-category-item img {
+        height: 10rem;
+    }
+}
+
+@media only screen and (min-width: 560px) {
+    
+    #hero {
+        height: 25rem;
+    }
+    
+    product-image img {
+        height: 18em;
+    }
+
+    product-category-item img {
+        height: 12rem;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    
+    #hero {
+        height: 30rem;
+    }
+    
+    product-image img {
+        height: 25em;
+    }
+
+    product-category-item img {
+        height: 15rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    header img {
+        margin: 0 auto;
+    }
+    main {
+        margin: 0 auto;
+        width: 1024px;
+    }
+
+    #hero {
+        height: 35rem;
+        width: 1024px;
+        margin: 0 auto;
+    }
+    
+    product-image img {
+        height: 25em;
+    }
+
+    product-category-item img {
+        height: 20rem;
+    }
+
+    footer-container {
+        margin: 0.66rem auto;
+        width: 1024px;
+    }
 }
