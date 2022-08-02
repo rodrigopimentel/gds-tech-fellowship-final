@@ -39,6 +39,7 @@ hero-text {
     color: #F5F5F5;
     font-size: 1.8rem;
     font-weight: 500;
+    text-shadow: 2px 2px #1414145d;
 }
 
 hero-text p {
@@ -184,12 +185,20 @@ blog-posts h2 {
     margin: 0 0 1rem 0;
 }
 
+blog-post-item {
+    margin: 0 1rem;
+}
+
 blog-post-item a {
     text-decoration: none;
     color: #707070;
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+blog-post-item img {
+    margin: 0 auto;
 }
 
 footer {
@@ -233,6 +242,10 @@ footer-container {
     margin: 0.66rem 0.66rem;
 }
 
+#desktop-nav {
+    display: none;
+}
+
 @media only screen and (min-width: 480px) {
     product-image img {
         height: 15em;
@@ -256,6 +269,10 @@ footer-container {
     product-category-item img {
         height: 12rem;
     }
+
+    blog-post-image img {
+        height: 18rem;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -271,13 +288,20 @@ footer-container {
     product-category-item img {
         height: 15rem;
     }
+
+    blog-post-image img {
+        height: 25rem;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
     
     header img {
-        margin: 0 auto;
+        margin: auto;
+        max-width: 20rem;
+        flex-basis: 100%;
     }
+    
     main {
         margin: 0 auto;
         width: 1024px;
@@ -286,7 +310,7 @@ footer-container {
     #hero {
         height: 35rem;
         width: 1024px;
-        margin: 0 auto;
+        margin: 1rem auto;
     }
     
     product-image img {
@@ -297,8 +321,47 @@ footer-container {
         height: 20rem;
     }
 
+    blog-post-image img {
+        height: 25rem;
+    }
+
     footer-container {
         margin: 0.66rem auto;
         width: 1024px;
+    }
+
+    #desktop-nav {
+        display: block;
+        flex-basis: 100%;
+    }
+
+    header {
+        display: flex;
+        background-color: #FFFF1F;
+        height: 4rem;
+        flex-wrap: wrap;
+    }
+
+    header nav {
+        margin: 0 auto;
+        background-color: #FFFF1F;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    header nav li {
+        display: inline;
+    }
+
+    header nav a {
+        color: #141414;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding: 1rem 1rem;
+    }
+
+    header nav a:hover {
+        font-weight: 500;
     }
 }
