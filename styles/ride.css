@@ -1,7 +1,7 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
-}
+} */
 
 #map {
   height: 60vh;
@@ -11,7 +11,7 @@
   height: 20vh;
 }
 
-/* Title Header  */
+Title Header 
 .heading {
   background-color: var(--accent-color);
   display: flex;
