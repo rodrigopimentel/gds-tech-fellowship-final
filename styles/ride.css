@@ -113,8 +113,7 @@ input [type="text"]::placeholder{
   font-size:x-large;
   display: block;
   position: relative;
-  margin: 1rem;
-
+  margin: 0rem;
 }
 
 .post p {
