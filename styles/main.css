@@ -3,6 +3,7 @@ html {
     font-family: 'Fira Sans', sans-serif;
     color: #141414;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 header {
