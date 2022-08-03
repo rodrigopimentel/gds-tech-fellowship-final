@@ -13,21 +13,22 @@
 
 Title Header 
 .heading {
-  background-color: var(--accent-color);
+  background-color: #FFFF1F;
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 5rem;
 }
 
-.heading h1{
+.heading h1 {
   font-size: xx-large;
   text-emphasis: bold;
-  margin-bottom: 2rem;
+  margin: 3rem 2rem 2rem 2rem;
 }
 
 .heading h3 {
   font-size: larger;
+  margin: 1rem 2rem 1rem 2rem;
 }
 
 /* Form Styling */
@@ -62,7 +63,7 @@ input [type="text"]::placeholder{
 #submitButton {
   margin-top: 20px;
   padding: 1.5rem;
-  background-color: var(--accent-color);
+  background-color: #FFFF1F;
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -74,7 +75,7 @@ input [type="text"]::placeholder{
   transition: 1.25s ease;
 }
 #submitButton:hover:after   {
-  background-color: var(--accent-color);
+  background-color: #FFFF1F;
   color: black;
   transition: 1.25s ease;
 }
