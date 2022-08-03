@@ -11,6 +11,7 @@ html {
     box-sizing: border-box;
     background-color: var(--background-color);
     transition: 1.5s ease all;
+    overflow-x: hidden;
 }
 
 header {
