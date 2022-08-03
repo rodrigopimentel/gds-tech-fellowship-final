@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script type="module" src="./rideshare/ride.js"></script>
+  <script type="module" src="./rideshare/blog.js"></script>
+  <link rel="stylesheet" href="./styles/ride.css"/>
+  <link rel="stylesheet" href="./styles/main.css"/>
+  <link rel="stylesheet" href="./styles/reset.css"/>
+  <script src="./scripts/nav.js"></script>
+
+</head>
+<body>
+
+
+  <header>
+    <a href="index.html"><img src="./img/logo.svg" alt="Mike's Bike Shop"></a>
+    <p class="nav-button" onclick="showNav()">☰</p>
+    <nav id="desktop-nav">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="rideShare.html">Share Your Ride</a></li>
+        </ul>
+    </nav>
+  </header>
+  <nav id="mobile-nav">
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="./rideShare/rideShare.html">Share Your Ride</a></li>
+    </ul>
+  </nav>
+    
+    <div class="heading">
+      <h1>RideShare</h1>
+      <h3>Had a good experience?</h3>
+  
+      <h3>Share your experience in our local trails!!</h3>
+    </div>
+  
+    <!-- Ineractive map -->
+    <!-- <div id="map"></div> -->
+    <div class="blog">
+  
+      <!-- new post -->
+      <div class="postContainer">
+        <div class="post">
+          <!-- <H2>User</H2>
+          <h3>Location</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet, dignissimos atque veniam architecto ad distinctio maiores optio placeat quae accusantium voluptas eligendi natus consequuntur impedit commodi nihil nobis iste?</p> -->
+          <div class="viewMap" id="viewMap"></div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="formContainer">
+        <!-- Post Form -->
+        <form method="post" role="form" id="postForm"">
+        <div id="map"></div>
+        <input type="text" id="search" placeholder="Enter your location..."/>
+  
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name"/>
+  
+        <label for="comments">Your Experience</label>
+        <!-- <input type="text" id="comments" placeholder="Message" tabindex="5" /> -->
+        <textarea type="text" placeholder="Message" rows="10"></textarea>
+  
+        <input type="button" value="Submit" id="submitButton"/>
+      </form>
+    </div>
+  <footer>
+    <footer-container>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Share Your Ride</a></li>
+            </ul>
+        </nav>
+        <contact-info>
+            <p class="description">Mike's Bike Shop is your full service dolor sit amet, consectetur located in City, State.</p>
+            <p>Phone: <span class="bold">(000) 000-0000</span></p>
+            <p>Email: <span class="bold">mail@mikesbikeshop.com</span></p>
+        </contact-info>
+    </footer-container>
+</footer>
+  
+
+ 
+  <script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPFPWAOiumP-wEmwS5xI4xUZ5zUq5lkws&libraries=places&callback=initMap">
+  </script>
+  
+  <!-- <script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPFPWAOiumP-wEmwS5xI4xUZ5zUq5lkws&libraries=places&callback=initAutocomplete">
+  </script> -->
+
+</body>
+
+    
+</html>
