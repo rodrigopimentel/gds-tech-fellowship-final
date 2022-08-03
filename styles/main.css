@@ -1,34 +1,22 @@
-:root {
-  --accent-color: #FFFF1F;
-  --background-color: #dbdbdb;
-}
-
-
 html {
     font-size: 15px;
     font-family: 'Fira Sans', sans-serif;
     color: #141414;
     box-sizing: border-box;
-    background-color: var(--background-color);
-    transition: 1.5s ease all;
     overflow-x: hidden;
 }
 
 header {
     display: flex;
     background-color: #FFFF1F;
-    height: 5rem;
+    height: 4rem;
     justify-content: space-between;
-
 }
 
-header a img{
+header img {
     width: 12rem;
-    margin: 20px 0 0 20px;
-    transform: scale(2);
+    margin: 0 0 0 10px;
 }
-
-
 
 #hero {
     display: flex;
@@ -299,7 +287,6 @@ footer-container {
 #nav-button {
     display: block;
     justify-self: right;
-    margin: 20rem;
 }
 
 #latest-rides {
@@ -400,14 +387,10 @@ footer-container {
 
 @media only screen and (min-width: 1024px) {
     
-    header a img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        max-width: 40rem;
+    header img {
+        margin: auto;
+        max-width: 20rem;
         flex-basis: 100%;
-        padding: 20px;
     }
     
     main {
@@ -445,11 +428,8 @@ footer-container {
 
     header {
         display: flex;
-        position: inherit;
         background-color: #FFFF1F;
-        margin-top: 0;
-        height: 5rem;
-        padding: 20px;
+        height: 4rem;
         flex-wrap: wrap;
     }
 
