@@ -20,6 +20,10 @@ Title Header
   padding: 5rem;
 }
 
+.post p {
+  margin: 4rem 1rem;
+}
+
 .heading h1 {
   font-size: xx-large;
   text-emphasis: bold;
@@ -102,23 +106,19 @@ input [type="text"]::placeholder{
 
 .post h2 {
   font-size: xx-large;
-  
+  margin: 1rem;
 }
 
 .post h3 {
   font-size:x-large;
   display: block;
   position: relative;
-  margin-left: 5rem;
-  margin-top: -1.55rem;
+  margin: 1rem;
 
 }
 
-
 .post p {
-
   margin-top: 1rem;
-  
 }
 
 .viewMap {
